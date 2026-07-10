@@ -1,7 +1,7 @@
-import Exercise3 from "./exercises/Exercise03/Exercise03"
+import Exercise4 from "./exercises/Exercise04/Exercise04"
 
 function App() {
-  return <Exercise3 />
+  return <Exercise4 />
 }
 
 export default App
