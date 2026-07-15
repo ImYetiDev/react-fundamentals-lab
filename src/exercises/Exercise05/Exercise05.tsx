@@ -19,7 +19,9 @@ export default function Exercise5() {
         const fetchUsers = async () => {
             try {
                 setLoading(true)
-                const response = await fetch("https://jsonplaceholder.typicode.com/users")
+                const response = await fetch("https://jsonplaceholder.typicode.com/users", 
+                    {signal: controller.signal}
+                )
 
                 if (!response.ok) {
                     throw new Error('Error obteniendo usuarios')
